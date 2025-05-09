@@ -35,3 +35,17 @@ video.addEventListener("timeupdate", function () {
     videoBar.style.width = 0;
   }
 });
+
+let swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 70,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+});
